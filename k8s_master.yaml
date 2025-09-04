@@ -17,7 +17,7 @@ spec:
       containers:
       - name: eggjs-app
         image: my-egg-app:latest  # 请替换为你的Egg.js应用镜像
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: always #修改镜像拉取方式 ifnotpresent -> always
         ports:
         - containerPort: 7001  # Egg.js默认端口，请确保与应用配置一致
         env:

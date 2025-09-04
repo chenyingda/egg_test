@@ -36,7 +36,7 @@ spec:
             port: 7001
           initialDelaySeconds: 30  # 容器启动后等待30秒开始探测
           periodSeconds: 10        # 每10秒探测一次
-        readinessProbe:  # 就绪探针，检查应用是否准备好接收流量
+        readinessProbe:  # 就绪探针，检查应用是否准备好接收流量 change
           httpGet:
             path: /  # 建议使用应用内的健康检查端点
             port: 7001
